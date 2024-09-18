@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LANGUAGES OF GODS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico">
+  </head>
+  <body>
+
+      <span class="loader" >
+      </span>
+    
+    
+    
+    <main>
+
+      <div class="container">
+        <div class="title" >        
+          <h6><b>LANGUAGES OF GOD</b><h6>
+          <p >A Free Translater
+          </p>
+        </div>
+
+        <div class="translater">
+          
+          
+          <div class="from">
+
+            <select id="fromlang"></select>
+            <textarea
+              id="source-text"
+              placeholder="Enter text to translate"
+            ></textarea>
+
+          </div>
+
+          <div>
+            <i class="fa-solid fa-right-left"></i>
+          </div>
+
+          <div class="to">
+            <select id="tolang"></select>
+            <textarea
+              id="translated-text"
+              placeholder="Translated text will appear here"
+              readonly
+            ></textarea>
+          </div>
+
+        </div>
+
+        <div class="option">
+          <button id="btn">TRANSLATE</button>
+        </div>
+       
+      </div>
+    </main>
+
+    <script src="langs.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>

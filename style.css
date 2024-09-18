@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    cursor: default;
+
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.loader {
+    display: flex;
+    width: 12rem; 
+    align-items: center;
+    justify-content: center;
+    border: 20px solid transparent;
+    border-top: 20px solid rgb(9, 255, 0);
+    border-bottom: 20px solid rgb(255, 238, 0);
+    height: 12rem;
+    border-radius: 50%; 
+    background-color: transparent; 
+    animation: loader_anim 1500ms linear infinite;
+}
+
+.loader {
+    display: none;
+}
+
+@keyframes loader_anim{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader img {
+    width: 7rem;
+    width: 7rem;
+}
+
+#translated-text, #source-text {
+    width: 95%;
+    resize: vertical;
+    min-height: 170px;
+    max-height: 180px;
+    font-size: 1.2rem;
+    padding: 10px;
+    height: 170px;
+    border: 2px solid rgb(33, 33, 33);
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title p {
+    font-size: 0.79rem;
+    margin-top: -0px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.title h6 {
+    margin: 0;
+    font-size: 1.3rem;
+    display: inline;
+}
+
+#tolang, #fromlang {
+    padding: 7px;
+    width: 95%;
+    margin: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    height: 40px;
+}
+
+.container {
+    max-width: 830px;
+    margin: 100px auto;
+    padding: 60px 30px 60px 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.translater {
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+#btn {
+    padding: 17px;
+    width: 70%;
+    margin: 25px auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    outline: none;
+    background-color: lightcyan;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+.option {
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+.fa-right-left {
+    font-size: 1.5rem;
+    margin: 30px;
+}
+
+.from, .to {
+    width: 70%;
+}
